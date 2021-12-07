@@ -1,34 +1,22 @@
-Classe Employe
+Quand vous avez fini le TP, créez une branche eval et effectuez dessus les exercices suivants :
 
-    Annoter la classe Employe en tant qu'entité pour qu'elle puisse récupérer les données de la table Employe
-    Ajouter un champ id de type Long et l'annoter de manière a ce qu'il puisse gérer les identifiants générés automatiquement par MySQL.
 
-Initialisation interface EmployeRepository
 
-    Créer l'interface EmployeRepository dans le package repository et la faire implémenter JpaRepository
+Ajouter à la classe Employe les attributs tempsPartiel de type Boolean et sexe de type String avec leurs getters et setters.
 
-Suite interface EmployeRepository
+Modifier si besoin les méthodes toString, hashCode et equals
 
-    Déclarer les méthodes permettant d'effectuer les recherches suivantes :
-        Recherche d'employés par matricule
-        Recherche d'employés par nom et prénom
-        Recherche d'employés par nom sans prendre en compte la casse
-        Recherche d'employés embauchés avant une certaine date
-        Recherche d'employés embauchés après une certaine date
-        Recherche d'employés gagnant plus de X euros et ordonnés selon leur salaire (ceux qui gagnent le plus d'abord).
+Ajouter un constructeur prenant en compte ces nouveaux attributs
 
-    Ajouter une méthode permettant de rechercher les employés en fonction de leur nom, sans prendre en compte la casse, et ce de manière paginée.
+Ajouter une entité Cadre héritant de Employe avec l'attribut suivant :
 
-    Ajouter une méthode findByNomOrPrenomAllIgnoreCase prenant en parametre un String nomOuPrenom et qui recherche sans prendre en compte la casse les employés ayant ce paramètre en nom ou en prénom. Utiliser @Param.
+coefficient de type Double avec une valeur par défaut à 1.
+Ajouter getters, setters, constructeurs, toString, equals et hashCode
 
-    Ajouter une méthode findEmployePlusRiches qui récupère les employés dont le salaire est supérieur au salaire moyen des employés (voir requête SQL exo 13 du TP MySQL)
+Redéfinir getPrimeAnnuelle pour que la méthode renvoie la prime annuelle de base (dans la classe Entreprise) multipliée par le coefficient du cadre.
 
-Héritage
+Redéfinir getNbConges pour que la méthode renvoie le nombre de congés normal des employés plus autant de congés que son coefficient.
 
-    Mettre en place la stratégie d'héritage ad hoc par rapport à ce qui a été mis en place lors du TP MySQL
-    BONUS Créer un repository BaseEmployeRepository générique permettant de factoriser les méthodes d'EmployeRepository pour qu'elles puissent être utilisées dans les repository de entités qui héritent d'Employe
-    Créer les Repository pour les entités restantes (en les faisant hériter de BaseEmployeRepository si vous avez fait la question précédente).
 
-Bonus
 
-    Dans le repository de Manager, ajouter une méthode findOneWithEquipeById prenant en paramètre un Long et retournant le manager. Essayer de récupérer l'équipe et voir l'exception levée. Corriger la méthode en ajoutant l'annotation @EntityGraph.
+Quand vous avez fini, pushez votre code et créez une Pull Request de votre branche eval vers VOTRE branche master
