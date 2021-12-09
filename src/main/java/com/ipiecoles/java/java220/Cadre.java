@@ -1,5 +1,7 @@
 package com.ipiecoles.java.java220;
 
+import org.joda.time.LocalDate;
+
 import java.util.Objects;
 
 public class Cadre extends Employe {
@@ -9,11 +11,17 @@ public class Cadre extends Employe {
     public Cadre() {
     }
 
-    @Override
+    public Cadre(String nom, String prenom, String matricule, LocalDate dateEmbauche, Double salaire,Boolean tempsPartiel,String sexe , Double coefficient) {
+        super(nom,prenom,matricule,dateEmbauche,salaire,tempsPartiel,sexe);
+        this.coefficient = coefficient;
+
+    }
+
     public String toString() {
-        return "Cadre{" +
+        return super.toString() +
+                "Cadre=" +
                 "coefficient=" + this.coefficient +
-                '}';
+                '.';
     }
 
     @Override
