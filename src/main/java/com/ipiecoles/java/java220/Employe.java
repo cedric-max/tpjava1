@@ -153,10 +153,10 @@ public abstract class Employe {
 		sb.append(", prenom='").append(prenom).append('\'');
 		sb.append(", matricule='").append(matricule).append('\'');
 		sb.append(", dateEmbauche=").append(dateEmbauche);
-		sb.append(", salaire=").append(salaire);
+		sb.append(", salaire=").append(salaire).append(" euros");
 		sb.append(", tempsPartiel=").append(tempsPartiel);
 		sb.append(", sexe=").append(sexe);
-		sb.append('}');
+		sb.append('.');
 		return sb.toString();
 	}
 

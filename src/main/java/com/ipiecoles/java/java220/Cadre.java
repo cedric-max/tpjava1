@@ -21,7 +21,7 @@ public class Cadre extends Employe {
         return super.toString() +
                 "Cadre=" +
                 "coefficient=" + this.coefficient +
-                '.';
+                '}';
     }
 
     @Override
