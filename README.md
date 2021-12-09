@@ -10,11 +10,12 @@ Quand vous avez fini le TP, créez une branche eval et effectuez dessus les exer
 
 4 -Ajouter une entité Cadre héritant de Employe avec l'attribut suivant :
 
-5 -coefficient de type Double avec une valeur par défaut à 1.
-6 -Ajouter getters, setters, constructeurs, toString, equals et hashCode
+   coefficient de type Double avec une valeur par défaut à 1.
 
-7 -Redéfinir getPrimeAnnuelle pour que la méthode renvoie la prime annuelle de base (dans la classe Entreprise) multipliée par le coefficient du cadre.
+5 -Ajouter getters, setters, constructeurs, toString, equals et hashCode
 
-8 -Redéfinir getNbConges pour que la méthode renvoie le nombre de congés normal des employés plus autant de congés que son coefficient.
+6 -Redéfinir getPrimeAnnuelle pour que la méthode renvoie la prime annuelle de base (dans la classe Entreprise) multipliée par le coefficient du cadre.
 
-9 -Quand vous avez fini, pushez votre code et créez une Pull Request de votre branche eval vers VOTRE branche master
+7 -Redéfinir getNbConges pour que la méthode renvoie le nombre de congés normal des employés plus autant de congés que son coefficient.
+
+8 -Quand vous avez fini, pushez votre code et créez une Pull Request de votre branche eval vers VOTRE branche master
